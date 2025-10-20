@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83b16a0b1cf4afda6b6b82b095f3c42, type: 3}
+  m_Name: AsteroidMine
+  m_EditorClassIdentifier:
+  id: AsteroidMine
+  displayName: Asteroid Mine
+  icon: {fileID: 0}
+  tags:
+  - AllGenerators
+  - AsteroidMine
+  baseCost: 10
+  costMultiplier: 1.15
+  baseProductionPerSecond: 1
+  producesResourceId: Credits
+  requiresResourceId: Credits
+  unlockCondition:
+    unlockedByDefault: 1
+    requiredResourceId:
+    requiredResourceAmount: 0
+    requiredMapNodeId:
