@@ -1,0 +1,57 @@
+key: HELP_CONTENT_EN
+# Galactic Expansion — How To Play
+Welcome, Commander! Build your space economy, expand to star systems and galaxies, and reshape the universe.
+
+## Basics
+- Earn **Credits** passively.
+- Buy **Generators** to increase your production.
+- Convert progression into higher-tier resources (Alloys → Antimatter → Dark Matter → Cosmic Strings).
+- The game progresses while idle, and also when you're offline.
+- Need to adjust production? [Open Generators](app://open/generators)
+
+## Generators
+- Each generator produces a resource **per second**.
+- Costs grow geometrically with level.
+- Use multi-buy: **x1/x10/x100/Max** to scale purchases quickly.
+- See **Upgrades** → [Open Upgrades](app://open/upgrades)
+
+## Upgrades
+- Upgrades multiply production for certain generators or resources.
+- Some upgrades unlock new systems or efficiencies.
+- Track new tech and reinvest often. [Visit Upgrades](app://open/upgrades)
+
+## Prestige (Resets for Powerful Currencies)
+- **Warp (Tier 1):** Reset star systems to earn **Warp Cores** for global multipliers.
+- **Ascension (Tier 2):** Reset galaxies for **Ascension Shards** (meta upgrades).
+- **Singularity (Tier 3):** Collapse for **Entropy**—late-game scaling and new caps.
+- Ready to reset? **Prestige (Warp)** → [Open Prestige](app://open/prestige)
+
+## Events
+- Random space phenomena (e.g., **Comet Shower**, **Wormhole Surge**) grant temporary boosts.
+- Watch the banner for timers and plan big purchases during boosts!
+- Want more details? [Help & Events](app://open/help)
+
+## Map
+- Explore nodes (systems → sectors → galaxies) to unlock new generators and bonuses.
+- Some nodes gate new tiers and mechanics—expand strategically.
+- Plot your expansion: [Open Map](app://open/map)
+
+## Offline Progress
+- When you return, you'll gain resources based on your production while away.
+- Tuned by **Offline Efficiency** and **Max Offline Hours**.
+
+## Tips
+- Push to unlock new generators and upgrades.
+- Prestige when gains slow down to collect powerful currencies.
+- Use **Max** buy to optimize time and minimize clicks.
+- Stuck? Revisit [Help](app://open/help) for quick reminders.
+
+## FAQ
+**Q: Do I lose everything on prestige?**
+A: You keep meta-currencies and unlocked meta-upgrades. Base progress resets.
+
+**Q: Is there a pay-to-win?**
+A: No. Cosmetics and convenience only (DLC-ready), balanced for fair play.
+
+**Q: Will my save be safe on Steam?**
+A: Local JSON saves now; Steam Cloud hooks are ready for later integration.

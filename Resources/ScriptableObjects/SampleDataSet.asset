@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2a0d02d0d841d28999d3c2f85f7f62, type: 3}
+  m_Name: SampleDataSet
+  m_EditorClassIdentifier: 
+  resources:
+  - Id: Credits
+    Name: Credits
+    BaseAmount: 1000
+    SoftCapThreshold: 1.0e+09
+    SoftCapExponent: 0.9
+  - Id: Alloys
+    Name: Alloys
+    BaseAmount: 0
+    SoftCapThreshold: 5.0e+08
+    SoftCapExponent: 0.85
+  - Id: Antimatter
+    Name: Antimatter
+    BaseAmount: 0
+    SoftCapThreshold: 1.0e+07
+    SoftCapExponent: 0.8
+  - Id: DarkMatter
+    Name: Dark Matter
+    BaseAmount: 0
+    SoftCapThreshold: 1.0e+06
+    SoftCapExponent: 0.75
+  - Id: CosmicStrings
+    Name: Cosmic Strings
+    BaseAmount: 0
+    SoftCapThreshold: 100000
+    SoftCapExponent: 0.7
+  generators:
+  - Id: AsteroidMine
+    Name: Asteroid Mines
+    OutputResourceId: Credits
+    BaseProduction: 5
+    BaseCost: 10
+    CostMultiplier: 1.15
+  - Id: OrbitalRefinery
+    Name: Orbital Refineries
+    OutputResourceId: Alloys
+    BaseProduction: 2
+    BaseCost: 100
+    CostMultiplier: 1.18
+  - Id: DysonArray
+    Name: Dyson Arrays
+    OutputResourceId: Antimatter
+    BaseProduction: 0.5
+    BaseCost: 10000
+    CostMultiplier: 1.22
+  upgrades:
+  - Id: ImprovedDrills
+    Name: Improved Drills
+    Description: Doubles asteroid mine output via autonomous nanite drills.
+    CostResourceId: Credits
+    CostAmount: 1000
+    TargetTags:
+    - AsteroidMine
+    Multiplier: 2
+    AdditiveBonus: 0
+  - Id: OrbitalAutomation
+    Name: Orbital Automation
+    Description: Robotic fleets maintain refineries, boosting alloy production.
+    CostResourceId: Alloys
+    CostAmount: 500
+    TargetTags:
+    - OrbitalRefinery
+    Multiplier: 2.5
+    AdditiveBonus: 0
+  - Id: DysonOptimization
+    Name: Dyson Optimization
+    Description: Optimized light harvesting nets increase antimatter synthesis.
+    CostResourceId: Credits
+    CostAmount: 50000
+    TargetTags:
+    - DysonArray
+    Multiplier: 3
+    AdditiveBonus: 0
+  - Id: UniversalLogistics
+    Name: Universal Logistics
+    Description: Galaxy-scale transport network adds a flat production bonus to all structures.
+    CostResourceId: DarkMatter
+    CostAmount: 2500
+    TargetTags:
+    - All
+    Multiplier: 1.5
+    AdditiveBonus: 10
+  prestiges:
+  - Id: WarpReset
+    DisplayName: Warp Initiation
+    Tier: 1
+    RequiredResourceId: Antimatter
+    RequiredAmount: 1000000
+    BaseReward: 10
+    RewardExponent: 1.15
+  events:
+  - Id: CometShower
+    DisplayName: Comet Shower
+    Type: 0
+    DurationSeconds: 120
+    ProductionMultiplier: 2
+  - Id: WormholeSurge
+    DisplayName: Wormhole Surge
+    Type: 1
+    DurationSeconds: 180
+    ProductionMultiplier: 3
